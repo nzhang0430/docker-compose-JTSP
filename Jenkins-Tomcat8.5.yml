@@ -1,0 +1,25 @@
+# This YAML file for build both docker container of jenkins and tomcat-v8.5 working together
+# Use docker-compose command to make up running, Please run command as following
+# docker-compose -f jenkins-tomcat.yml up
+#
+# Version 3, update by Frank Zhang in Mar/13/2019
+
+version: '3'
+services:
+  jenkins:
+    networks:
+     - jenkins-net
+    image: jenkins/jenkins:latest
+    ports:
+     - "8180:8080"
+     - "50000:50000"
+  tomcat:
+    networks:
+     - jenkins-net
+    image: tomcat
+    ports:
+     - "8280:8080"
+
+networks:
+  jenkins-net:
+    driver: bridge
