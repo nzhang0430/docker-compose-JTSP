@@ -22,7 +22,6 @@ run command as following:
 9: $ docker pull postgresql
 10: $ docker build -t tomcat ./
 11: $ docker-compose -f jtsp.yml up
-
 12: Open Jenkins server: http://localhost:8180
-13: 13: 13: 13: 13: 13: 13: 13: 13: 13: 13: 13: 13: Open Tomcat server: http://localhost:8280
+13: Open Tomcat server: http://localhost:8280
 14: Open SonarQube server: http://localhost:9000
