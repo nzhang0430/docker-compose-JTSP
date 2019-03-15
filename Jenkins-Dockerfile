@@ -1,0 +1,2 @@
+FROM  jenkins
+COPY jenkins.war /usr/share/jenkins
