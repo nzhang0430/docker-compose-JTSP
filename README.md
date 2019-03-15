@@ -17,14 +17,12 @@ Important: Memory need setup at least 8GiB in Docker preferences for Running the
 6th: Run docker-compse with yaml file:
 run command as following:
 
-#$ docker pull jenkins/jenkins:latest
-#$ docker pull sonarqube
-#$ docker pull postgresql
-#$ docker build -t tomcat ./
-#$ docker-compose -f jtsp.yml up
+7: $ docker pull jenkins/jenkins:latest
+8: $ docker pull sonarqube
+9: $ docker pull postgresql
+10: $ docker build -t tomcat ./
+11: $ docker-compose -f jtsp.yml up
 
-#Open Jenkins server: http://localhost:8180
-#Open Tomcat server: http://localhost:8280
-#Open SonarQube server: http://localhost:9000
-#To configure Jenkins server and build your source code, please look into follwoing link:
-#https://phitonboarding.atlassian.net/wiki/spaces/DAD/pages/642940947/Configuring+Jenkins+version-2.0
+12: Open Jenkins server: http://localhost:8180
+13: 13: 13: 13: 13: 13: 13: 13: 13: 13: 13: 13: 13: Open Tomcat server: http://localhost:8280
+14: Open SonarQube server: http://localhost:9000
