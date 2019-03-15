@@ -17,7 +17,11 @@ Important: Memory need setup at least 8GiB in Docker preferences for Running the
 6th: Run docker-compse with yaml file:
 run command as following:
 
-7: $ docker pull jenkins/jenkins:latest
+7: copy Jenkins-Dockerfile and rename to Dockerfile in your working directory
+   use wget http://updates.jenkins-ci.org/download/war/2.168/jenkins.war
+   to get version 2.168 Jenkins.war
+  $ docker build -t jenkins:2.168  ./   
+
 8: $ docker pull sonarqube
 9: $ docker pull postgresql
 10: $ docker build -t tomcat ./
