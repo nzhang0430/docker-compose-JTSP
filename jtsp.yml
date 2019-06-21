@@ -36,7 +36,8 @@ services:
       - sonarqube_conf:/opt/sonarqube/conf
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
-
+    depends_on:
+      - db
   db:
     image: postgres
     networks:
